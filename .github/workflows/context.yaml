@@ -15,3 +15,6 @@ jobs:
 
       - name: accessing env
         run: "printenv"
+
+      - name: Branch name
+        run: echo "branch is $GITHUB_REF_TYPE and commit is $GITHUB_SHA "
