@@ -1,0 +1,17 @@
+name: context in GHA
+on: workflow_dispatch
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "access context in GHA"
+        run: |
+          echo "The workflow is triggered by  ${{github.actor}}"
+          echo "The repo is  ${{github.repository}}"
+          echo "The branch name is  ${{github.ref_name}}"
+
+      - name: accessing all github context
+        run: echo "${{ toJSON(github) }}"
+
+      - name: accessing env
+        run: "printenv"
