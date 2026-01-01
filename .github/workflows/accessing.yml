@@ -11,4 +11,4 @@ jobs:
       - name: accessing Env variable
         run: echo "Env is $APP_ENV"
         env:
-          APP_ENV: "dev"
+          APP_ENV: "prod"
