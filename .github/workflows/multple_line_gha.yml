@@ -1,4 +1,4 @@
-name: Hello world
+name: multple_line_gha
 on: workflow_dispatch
 jobs:
   hello:
