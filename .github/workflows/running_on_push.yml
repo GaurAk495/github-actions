@@ -1,8 +1,16 @@
 name: run action when code is push
-on: push
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - "realease/**"
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
+      - name: task 1
+        run: echo "task 1 running"
       - name: task
-        run: echo "task running"
+        run: echo "task 2 running"
+#for push event 'push' or for multiple triggers we can do ['push','pull_request']. for push on specific branch as above.
