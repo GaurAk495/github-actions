@@ -6,5 +6,5 @@ jobs:
   checkEnv:
     runs-on: ubuntu-latest
     steps:
-      name: accessing Env variable
-      runs: echo "Env is $APP_ENV"
+      - name: accessing Env variable
+        runs: echo "Env is $APP_ENV"
