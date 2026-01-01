@@ -1,0 +1,12 @@
+name: checkoutFile
+on: push
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking out in file directory.
+      - uses: actions/checkout@v6
+      - name: reading html file.
+        run: cat index.html
+      - name: finished
+        run: echo "done."
