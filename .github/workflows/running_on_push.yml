@@ -5,6 +5,9 @@ on:
       - main
       - develop
       - "realease/**"
+  pull_request:
+    branches:
+      - main
 jobs:
   hello:
     runs-on: ubuntu-latest
