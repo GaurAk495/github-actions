@@ -4,6 +4,8 @@ env:
   APP_ENV: "test"
 jobs:
   checkEnv:
+    env:
+      APP_ENV: "dev"
     runs-on: ubuntu-latest
     steps:
       - name: accessing Env variable
