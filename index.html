@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Actions.</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Actions Demo</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+    }
+
+    .card {
+      background: #ffffff;
+      color: #333;
+      padding: 2rem;
+      max-width: 420px;
+      width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      color: #2a5298;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+
+    .badge {
+      margin-top: 1.2rem;
+      display: inline-block;
+      padding: 6px 14px;
+      background: #2a5298;
+      color: #fff;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
+
 <body>
-    <H1>This is  a HTML file.</H1>
-    <p>We are learning Github Actions.</p>
-    <p>Update and reploying automatically.</p>
-    <p>Some new Feature.</p>
+  <div class="card">
+    <h1>GitHub Actions</h1>
+    <p>This is a HTML file.</p>
+    <p>We are learning GitHub Actions.</p>
+    <p>Auto update & redeploy enabled.</p>
+    <p>Some new feature added 🚀</p>
+
+    <span class="badge">CI / CD Demo</span>
+  </div>
 </body>
 </html>
