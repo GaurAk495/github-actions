@@ -10,7 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
+    # running the build only when pull_request is done against the main-branch. otherwise it will not run.
+    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main'
     steps:
       - name: Build app
         run: echo "building app"
