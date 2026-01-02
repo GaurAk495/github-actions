@@ -8,7 +8,7 @@ on:
         type: string
 jobs:
   greeting:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: "greeting user"
         run: echo "hello ${{inputs.name}}"
