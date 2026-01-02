@@ -1,10 +1,11 @@
 name: GHA functions
 on:
-  push:
-    branches:
-      - main
-      - dev
-      - feature/**
+  workflow_dispatch
+  # push:
+  #   branches:
+  #     - main
+  #     - dev
+  #     - feature/**
 jobs:
   quality_checks:
     runs-on: ubuntu-latest
