@@ -1,10 +1,11 @@
 name: if condition in gha
 on: push
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: run this on main branch
-      if: github.ref_name == 'main'
-      run: echo "running this for main branch."
-    - name: some job.
-      run: echo "runnig some job."
+  if-gha:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run this on main branch
+        if: github.ref_name == 'main'
+        run: echo "running this for main branch."
+      - name: some job.
+        run: echo "runnig some job."
