@@ -9,6 +9,7 @@ jobs:
           echo "The workflow is triggered by  ${{github.actor}}"
           echo "The repo is  ${{github.repository}}"
           echo "The branch name is  ${{github.ref_name}}"
+          echo "This is a push/pr: ${{github.event_name}}"
 
       - name: accessing all github context
         run: echo "${{ toJSON(github) }}"
